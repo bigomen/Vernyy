@@ -1,0 +1,35 @@
+package com.luxfacta.vernyy.api.rest;
+
+import java.io.Serial;
+import java.io.Serializable;
+
+import com.luxfacta.vernyy.api.base.IRestModel;
+import com.luxfacta.vernyy.api.model.Condominio;
+
+@Mapper.ReferenceModel(className = Condominio.class)
+public class RestSyncCondominio implements Serializable, IRestModel {
+	
+	@Serial
+	private static final long serialVersionUID = 1L;
+	
+	private String id;
+	
+	private String nome;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+}

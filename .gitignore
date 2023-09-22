@@ -1,0 +1,12 @@
+/target/
+/.project
+/.factorypath
+/.classpath
+compiler.xml
+encodings.xml
+misc.xml
+/.settings/
+/.idea/
+target
+/*.log
+/bin/
